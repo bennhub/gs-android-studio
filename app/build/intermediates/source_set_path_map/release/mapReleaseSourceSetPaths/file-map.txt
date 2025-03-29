@@ -1,0 +1,11 @@
+app.hayzer.grooveslider.twa.app-core-1.1.0-0 /Users/ben/.gradle/caches/8.8/transforms/2144911bb09dce3a07f407e3b390637e/transformed/core-1.1.0/res
+app.hayzer.grooveslider.twa.app-billing-1.0.0-alpha05-1 /Users/ben/.gradle/caches/8.8/transforms/3a497b416131995bcf4b654c1f11b392/transformed/billing-1.0.0-alpha05/res
+app.hayzer.grooveslider.twa.app-browser-1.4.0-2 /Users/ben/.gradle/caches/8.8/transforms/b511174c15fdde7dea3e957094b4390b/transformed/browser-1.4.0/res
+app.hayzer.grooveslider.twa.app-androidbrowserhelper-2.5.0-3 /Users/ben/.gradle/caches/8.8/transforms/d3335fbdff4200978ad121d7b141def7/transformed/androidbrowserhelper-2.5.0/res
+app.hayzer.grooveslider.twa.app-pngs-4 /Users/ben/Documents/GS PWA BLD 03.24.25/source/app/build/generated/res/pngs/release
+app.hayzer.grooveslider.twa.app-resValues-5 /Users/ben/Documents/GS PWA BLD 03.24.25/source/app/build/generated/res/resValues/release
+app.hayzer.grooveslider.twa.app-packageReleaseResources-6 /Users/ben/Documents/GS PWA BLD 03.24.25/source/app/build/intermediates/incremental/release/packageReleaseResources/merged.dir
+app.hayzer.grooveslider.twa.app-packageReleaseResources-7 /Users/ben/Documents/GS PWA BLD 03.24.25/source/app/build/intermediates/incremental/release/packageReleaseResources/stripped.dir
+app.hayzer.grooveslider.twa.app-release-8 /Users/ben/Documents/GS PWA BLD 03.24.25/source/app/build/intermediates/merged_res/release/mergeReleaseResources
+app.hayzer.grooveslider.twa.app-main-9 /Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/res
+app.hayzer.grooveslider.twa.app-release-10 /Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/release/res

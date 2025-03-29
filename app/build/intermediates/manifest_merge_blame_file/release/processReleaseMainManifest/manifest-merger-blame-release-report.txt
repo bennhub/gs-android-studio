@@ -1,0 +1,402 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3    Copyright 2019 Google Inc. All Rights Reserved.
+4
+5     Licensed under the Apache License, Version 2.0 (the "License");
+6     you may not use this file except in compliance with the License.
+7     You may obtain a copy of the License at
+8
+9         http://www.apache.org/licenses/LICENSE-2.0
+10
+11     Unless required by applicable law or agreed to in writing, software
+12     distributed under the License is distributed on an "AS IS" BASIS,
+13     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14     See the License for the specific language governing permissions and
+15     limitations under the License.
+16-->
+17<!--
+18 The "package" attribute is rewritten by the Gradle build with the value of applicationId.
+19     It is still required here, as it is used to derive paths, for instance when referring
+20     to an Activity by ".MyActivity" instead of the full name. If more Activities are added to the
+21     application, the package attribute will need to reflect the correct path in order to use
+22     the abbreviated format.
+23-->
+24<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+25    package="app.hayzer.grooveslider.twa"
+26    android:versionCode="9"
+27    android:versionName="1.0.0.0" >
+28
+29    <uses-sdk
+30        android:minSdkVersion="23"
+31        android:targetSdkVersion="35" />
+32
+33    <!-- Add billing permission here -->
+34    <uses-permission android:name="com.android.vending.BILLING" />
+34-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:26:5-67
+34-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:26:22-64
+35    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+35-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:28:5-76
+35-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:28:22-74
+36
+37    <queries>
+37-->[com.google.androidbrowserhelper:androidbrowserhelper:2.5.0] /Users/ben/.gradle/caches/8.8/transforms/d3335fbdff4200978ad121d7b141def7/transformed/androidbrowserhelper-2.5.0/AndroidManifest.xml:26:5-34:15
+38        <intent>
+38-->[com.google.androidbrowserhelper:androidbrowserhelper:2.5.0] /Users/ben/.gradle/caches/8.8/transforms/d3335fbdff4200978ad121d7b141def7/transformed/androidbrowserhelper-2.5.0/AndroidManifest.xml:27:9-33:18
+39            <action android:name="android.intent.action.VIEW" />
+39-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:117:17-68
+39-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:117:25-66
+40
+41            <category android:name="android.intent.category.BROWSABLE" />
+41-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:119:17-77
+41-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:119:27-75
+42
+43            <data android:scheme="https" />
+43-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:120:17-121:54
+43-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:120:23-45
+44        </intent>
+45        <intent>
+45-->[com.android.billingclient:billing:6.0.1] /Users/ben/.gradle/caches/8.8/transforms/861e4176e0912d29b6c8b075d46b8fe5/transformed/billing-6.0.1/AndroidManifest.xml:13:9-15:18
+46            <action android:name="com.android.vending.billing.InAppBillingService.BIND" />
+46-->[com.android.billingclient:billing:6.0.1] /Users/ben/.gradle/caches/8.8/transforms/861e4176e0912d29b6c8b075d46b8fe5/transformed/billing-6.0.1/AndroidManifest.xml:14:13-91
+46-->[com.android.billingclient:billing:6.0.1] /Users/ben/.gradle/caches/8.8/transforms/861e4176e0912d29b6c8b075d46b8fe5/transformed/billing-6.0.1/AndroidManifest.xml:14:21-88
+47        </intent>
+48    </queries> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+49    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+50    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+50-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/ben/.gradle/caches/8.8/transforms/686fe56e74446f381389de1544c0f1d4/transformed/transport-backend-cct-3.1.8/AndroidManifest.xml:24:5-79
+50-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/ben/.gradle/caches/8.8/transforms/686fe56e74446f381389de1544c0f1d4/transformed/transport-backend-cct-3.1.8/AndroidManifest.xml:24:22-76
+51    <uses-permission android:name="android.permission.INTERNET" />
+51-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/ben/.gradle/caches/8.8/transforms/686fe56e74446f381389de1544c0f1d4/transformed/transport-backend-cct-3.1.8/AndroidManifest.xml:25:5-67
+51-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/ben/.gradle/caches/8.8/transforms/686fe56e74446f381389de1544c0f1d4/transformed/transport-backend-cct-3.1.8/AndroidManifest.xml:25:22-64
+52
+53    <application
+53-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:30:5-178:19
+54        android:name="app.hayzer.grooveslider.twa.Application"
+54-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:31:9-35
+55        android:allowBackup="true"
+55-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:32:9-35
+56        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+56-->[androidx.core:core:1.1.0] /Users/ben/.gradle/caches/8.8/transforms/2144911bb09dce3a07f407e3b390637e/transformed/core-1.1.0/AndroidManifest.xml:24:18-86
+57        android:extractNativeLibs="false"
+58        android:icon="@mipmap/ic_launcher"
+58-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:33:9-43
+59        android:label="@string/appName"
+59-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:34:9-40
+60        android:manageSpaceActivity="com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity"
+60-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:35:9-105
+61        android:supportsRtl="true"
+61-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:36:9-35
+62        android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+62-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:37:9-68
+63        <meta-data
+63-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:39:9-41:58
+64            android:name="asset_statements"
+64-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:40:13-44
+65            android:resource="@string/assetStatements" />
+65-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:41:13-55
+66        <meta-data
+66-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:43:9-45:54
+67            android:name="web_manifest_url"
+67-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:44:13-44
+68            android:value="@string/webManifestUrl" />
+68-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:45:13-51
+69        <meta-data
+69-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:47:9-49:52
+70            android:name="twa_generator"
+70-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:48:13-41
+71            android:value="@string/generatorApp" />
+71-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:49:13-49
+72
+73        <activity android:name="com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity" >
+73-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:51:9-55:20
+73-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:51:19-100
+74            <meta-data
+74-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:52:13-54:53
+75                android:name="android.support.customtabs.trusted.MANAGE_SPACE_URL"
+75-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:53:17-83
+76                android:value="@string/launchUrl" />
+76-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:54:17-50
+77        </activity>
+78        <activity
+78-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:57:9-123:20
+79            android:name="app.hayzer.grooveslider.twa.LauncherActivity"
+79-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:57:19-50
+80            android:alwaysRetainTaskState="true"
+80-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:58:13-49
+81            android:exported="true"
+81-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:60:13-36
+82            android:label="@string/launcherName" >
+82-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:59:13-49
+83            <meta-data
+83-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:61:13-62:53
+84                android:name="android.support.customtabs.trusted.DEFAULT_URL"
+84-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:61:24-85
+85                android:value="@string/launchUrl" />
+85-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:62:17-50
+86            <meta-data
+86-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:64:13-66:58
+87                android:name="android.support.customtabs.trusted.STATUS_BAR_COLOR"
+87-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:65:17-83
+88                android:resource="@color/colorPrimary" />
+88-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:66:17-55
+89            <meta-data
+89-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:68:13-70:62
+90                android:name="android.support.customtabs.trusted.STATUS_BAR_COLOR_DARK"
+90-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:69:17-88
+91                android:resource="@color/colorPrimaryDark" />
+91-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:70:17-59
+92            <meta-data
+92-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:72:13-74:61
+93                android:name="android.support.customtabs.trusted.NAVIGATION_BAR_COLOR"
+93-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:73:17-87
+94                android:resource="@color/navigationColor" />
+94-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:74:17-58
+95            <meta-data
+95-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:76:13-78:65
+96                android:name="android.support.customtabs.trusted.NAVIGATION_BAR_COLOR_DARK"
+96-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:77:17-92
+97                android:resource="@color/navigationColorDark" />
+97-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:78:17-62
+98            <meta-data
+98-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:80:13-82:68
+99                android:name="androix.browser.trusted.NAVIGATION_BAR_DIVIDER_COLOR"
+99-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:81:17-84
+100                android:resource="@color/navigationDividerColor" />
+100-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:82:17-65
+101            <meta-data
+101-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:84:13-86:72
+102                android:name="androix.browser.trusted.NAVIGATION_BAR_DIVIDER_COLOR_DARK"
+102-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:85:17-89
+103                android:resource="@color/navigationDividerColorDark" />
+103-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:86:17-69
+104            <meta-data
+104-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:88:13-89:54
+105                android:name="android.support.customtabs.trusted.SPLASH_IMAGE_DRAWABLE"
+105-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:88:24-95
+106                android:resource="@drawable/splash" />
+106-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:89:17-52
+107            <meta-data
+107-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:91:13-92:60
+108                android:name="android.support.customtabs.trusted.SPLASH_SCREEN_BACKGROUND_COLOR"
+108-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:91:24-104
+109                android:resource="@color/backgroundColor" />
+109-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:92:17-58
+110            <meta-data
+110-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:94:13-95:71
+111                android:name="android.support.customtabs.trusted.SPLASH_SCREEN_FADE_OUT_DURATION"
+111-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:94:24-105
+112                android:value="@integer/splashScreenFadeOutDuration" />
+112-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:95:17-69
+113            <meta-data
+113-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:97:13-98:60
+114                android:name="android.support.customtabs.trusted.FILE_PROVIDER_AUTHORITY"
+114-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:97:24-97
+115                android:value="@string/providerAuthority" />
+115-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:98:17-58
+116            <meta-data
+116-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:100:13-97
+117                android:name="android.app.shortcuts"
+117-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:100:24-60
+118                android:resource="@xml/shortcuts" />
+118-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:100:61-94
+119            <meta-data
+119-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:102:13-103:56
+120                android:name="android.support.customtabs.trusted.FALLBACK_STRATEGY"
+120-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:102:24-91
+121                android:value="@string/fallbackType" />
+121-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:103:17-53
+122            <meta-data
+122-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:105:13-106:45
+123                android:name="android.support.customtabs.trusted.DISPLAY_MODE"
+123-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:105:24-86
+124                android:value="immersive" />
+124-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:106:17-42
+125            <meta-data
+125-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:108:13-109:54
+126                android:name="android.support.customtabs.trusted.SCREEN_ORIENTATION"
+126-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:108:24-92
+127                android:value="@string/orientation" />
+127-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:109:17-52
+128
+129            <intent-filter>
+129-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:111:13-114:29
+130                <action android:name="android.intent.action.MAIN" />
+130-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:112:17-69
+130-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:112:25-66
+131
+132                <category android:name="android.intent.category.LAUNCHER" />
+132-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:113:17-77
+132-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:113:27-74
+133            </intent-filter>
+134            <intent-filter android:autoVerify="true" >
+134-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:116:13-122:29
+134-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:116:28-53
+135                <action android:name="android.intent.action.VIEW" />
+135-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:117:17-68
+135-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:117:25-66
+136
+137                <category android:name="android.intent.category.DEFAULT" />
+137-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:118:17-76
+137-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:118:27-73
+138                <category android:name="android.intent.category.BROWSABLE" />
+138-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:119:17-77
+138-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:119:27-75
+139
+140                <data
+140-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:120:17-121:54
+141                    android:host="@string/hostName"
+141-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:121:21-52
+142                    android:scheme="https" />
+142-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:120:23-45
+143            </intent-filter>
+144        </activity>
+145        <activity android:name="com.google.androidbrowserhelper.trusted.FocusActivity" />
+145-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:125:9-90
+145-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:125:19-87
+146        <activity
+146-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:127:9-128:62
+147            android:name="com.google.androidbrowserhelper.trusted.WebViewFallbackActivity"
+147-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:127:19-97
+148            android:configChanges="orientation|screenSize" />
+148-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:128:13-59
+149
+150        <provider
+150-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:130:9-138:20
+151            android:name="androidx.core.content.FileProvider"
+151-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:131:13-62
+152            android:authorities="@string/providerAuthority"
+152-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:132:13-60
+153            android:exported="false"
+153-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:134:13-37
+154            android:grantUriPermissions="true" >
+154-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:133:13-47
+155            <meta-data
+155-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:135:13-137:53
+156                android:name="android.support.FILE_PROVIDER_PATHS"
+156-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:136:17-67
+157                android:resource="@xml/filepaths" />
+157-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:137:17-50
+158        </provider>
+159
+160        <service
+160-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:140:9-152:19
+161            android:name="app.hayzer.grooveslider.twa.DelegationService"
+161-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:141:13-46
+162            android:enabled="@bool/enableNotification"
+162-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:142:13-55
+163            android:exported="@bool/enableNotification" >
+163-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:143:13-56
+164            <meta-data
+164-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:144:13-146:69
+165                android:name="android.support.customtabs.trusted.SMALL_ICON"
+165-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:145:17-77
+166                android:resource="@drawable/ic_notification_icon" />
+166-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:146:17-66
+167
+168            <intent-filter>
+168-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:148:13-151:29
+169                <action android:name="android.support.customtabs.trusted.TRUSTED_WEB_ACTIVITY_SERVICE" />
+169-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:149:17-105
+169-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:149:25-103
+170
+171                <category android:name="android.intent.category.DEFAULT" />
+171-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:118:17-76
+171-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:118:27-73
+172            </intent-filter>
+173        </service>
+174
+175        <activity android:name="com.google.androidbrowserhelper.trusted.NotificationPermissionRequestActivity" />
+175-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:154:9-114
+175-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:154:19-111
+176
+177        <!-- Payment components for Google Play Billing -->
+178        <activity
+178-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:157:9-168:20
+179            android:name="com.google.androidbrowserhelper.playbilling.provider.PaymentActivity"
+179-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:158:13-96
+180            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+180-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:160:13-96
+181            android:exported="true"
+181-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:161:13-36
+182            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+182-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:159:13-72
+183            <intent-filter>
+183-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:162:13-164:29
+184                <action android:name="org.chromium.intent.action.PAY" />
+184-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:163:17-73
+184-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:163:25-70
+185            </intent-filter>
+186
+187            <meta-data
+187-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:165:13-167:67
+188                android:name="org.chromium.default_payment_method_name"
+188-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:166:17-72
+189                android:value="https://play.google.com/billing" />
+189-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:167:17-64
+190        </activity>
+191
+192        <!-- This service checks who calls it at runtime. -->
+193        <service
+193-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:171:9-177:19
+194            android:name="com.google.androidbrowserhelper.playbilling.provider.PaymentService"
+194-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:172:13-95
+195            android:exported="true" >
+195-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:173:13-36
+196            <intent-filter>
+196-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:174:13-176:29
+197                <action android:name="org.chromium.intent.action.IS_READY_TO_PAY" />
+197-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:175:17-85
+197-->/Users/ben/Documents/GS PWA BLD 03.24.25/source/app/src/main/AndroidManifest.xml:175:25-82
+198            </intent-filter>
+199        </service>
+200
+201        <meta-data
+201-->[com.android.billingclient:billing:6.0.1] /Users/ben/.gradle/caches/8.8/transforms/861e4176e0912d29b6c8b075d46b8fe5/transformed/billing-6.0.1/AndroidManifest.xml:19:9-21:37
+202            android:name="com.google.android.play.billingclient.version"
+202-->[com.android.billingclient:billing:6.0.1] /Users/ben/.gradle/caches/8.8/transforms/861e4176e0912d29b6c8b075d46b8fe5/transformed/billing-6.0.1/AndroidManifest.xml:20:13-73
+203            android:value="6.0.1" />
+203-->[com.android.billingclient:billing:6.0.1] /Users/ben/.gradle/caches/8.8/transforms/861e4176e0912d29b6c8b075d46b8fe5/transformed/billing-6.0.1/AndroidManifest.xml:21:13-34
+204
+205        <activity
+205-->[com.android.billingclient:billing:6.0.1] /Users/ben/.gradle/caches/8.8/transforms/861e4176e0912d29b6c8b075d46b8fe5/transformed/billing-6.0.1/AndroidManifest.xml:23:9-27:75
+206            android:name="com.android.billingclient.api.ProxyBillingActivity"
+206-->[com.android.billingclient:billing:6.0.1] /Users/ben/.gradle/caches/8.8/transforms/861e4176e0912d29b6c8b075d46b8fe5/transformed/billing-6.0.1/AndroidManifest.xml:24:13-78
+207            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+207-->[com.android.billingclient:billing:6.0.1] /Users/ben/.gradle/caches/8.8/transforms/861e4176e0912d29b6c8b075d46b8fe5/transformed/billing-6.0.1/AndroidManifest.xml:25:13-96
+208            android:exported="false"
+208-->[com.android.billingclient:billing:6.0.1] /Users/ben/.gradle/caches/8.8/transforms/861e4176e0912d29b6c8b075d46b8fe5/transformed/billing-6.0.1/AndroidManifest.xml:26:13-37
+209            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+209-->[com.android.billingclient:billing:6.0.1] /Users/ben/.gradle/caches/8.8/transforms/861e4176e0912d29b6c8b075d46b8fe5/transformed/billing-6.0.1/AndroidManifest.xml:27:13-72
+210
+211        <service
+211-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/ben/.gradle/caches/8.8/transforms/686fe56e74446f381389de1544c0f1d4/transformed/transport-backend-cct-3.1.8/AndroidManifest.xml:28:9-34:19
+212            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+212-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/ben/.gradle/caches/8.8/transforms/686fe56e74446f381389de1544c0f1d4/transformed/transport-backend-cct-3.1.8/AndroidManifest.xml:29:13-103
+213            android:exported="false" >
+213-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/ben/.gradle/caches/8.8/transforms/686fe56e74446f381389de1544c0f1d4/transformed/transport-backend-cct-3.1.8/AndroidManifest.xml:30:13-37
+214            <meta-data
+214-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/ben/.gradle/caches/8.8/transforms/686fe56e74446f381389de1544c0f1d4/transformed/transport-backend-cct-3.1.8/AndroidManifest.xml:31:13-33:39
+215                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+215-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/ben/.gradle/caches/8.8/transforms/686fe56e74446f381389de1544c0f1d4/transformed/transport-backend-cct-3.1.8/AndroidManifest.xml:32:17-94
+216                android:value="cct" />
+216-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/ben/.gradle/caches/8.8/transforms/686fe56e74446f381389de1544c0f1d4/transformed/transport-backend-cct-3.1.8/AndroidManifest.xml:33:17-36
+217        </service>
+218        <service
+218-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/ben/.gradle/caches/8.8/transforms/e9aeb3a12b317415ea9135db88269d91/transformed/transport-runtime-3.1.8/AndroidManifest.xml:26:9-30:19
+219            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+219-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/ben/.gradle/caches/8.8/transforms/e9aeb3a12b317415ea9135db88269d91/transformed/transport-runtime-3.1.8/AndroidManifest.xml:27:13-117
+220            android:exported="false"
+220-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/ben/.gradle/caches/8.8/transforms/e9aeb3a12b317415ea9135db88269d91/transformed/transport-runtime-3.1.8/AndroidManifest.xml:28:13-37
+221            android:permission="android.permission.BIND_JOB_SERVICE" >
+221-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/ben/.gradle/caches/8.8/transforms/e9aeb3a12b317415ea9135db88269d91/transformed/transport-runtime-3.1.8/AndroidManifest.xml:29:13-69
+222        </service>
+223
+224        <receiver
+224-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/ben/.gradle/caches/8.8/transforms/e9aeb3a12b317415ea9135db88269d91/transformed/transport-runtime-3.1.8/AndroidManifest.xml:32:9-34:40
+225            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+225-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/ben/.gradle/caches/8.8/transforms/e9aeb3a12b317415ea9135db88269d91/transformed/transport-runtime-3.1.8/AndroidManifest.xml:33:13-132
+226            android:exported="false" />
+226-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/ben/.gradle/caches/8.8/transforms/e9aeb3a12b317415ea9135db88269d91/transformed/transport-runtime-3.1.8/AndroidManifest.xml:34:13-37
+227    </application>
+228
+229</manifest>
